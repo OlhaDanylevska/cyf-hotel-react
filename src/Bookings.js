@@ -50,7 +50,8 @@ const Bookings = () => {
         <Search search={search} />
         {
           bookings.length > 0 ? (<SearchResults bookings={bookings} />)
-            : bookings !== 500 ? (<span>Loading... </span>) : (<span className="error-message"> Error 500</span>)
+            : bookings !== 500
+              ? (<span>Loading... </span>) : (<span className="error-message"> Error 500</span>)
         }
 
       </div>
